@@ -8,7 +8,9 @@ const AuthContext = createContext({});
 export const AuthProvider = ({ children }) => {
 
 
-
+    const signInWithGoogle = async () => {
+        await Google.logInAsync()
+    }
 
   return (
     <AuthContext.Provider
